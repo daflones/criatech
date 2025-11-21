@@ -1,0 +1,41 @@
+{
+  "name": "CriaTech - Desenvolvimento de Sites e Vídeos com IA",
+  "short_name": "CriaTech",
+  "description": "Especialistas em desenvolvimento de sites, sistemas e vídeos com inteligência artificial. Transformamos seu negócio com soluções digitais de alta conversão.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/heroo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/heroo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/heroo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["business", "technology", "productivity"],
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "scope": "/",
+  "shortcuts": [
+    {
+      "name": "Solicitar Orçamento",
+      "short_name": "Orçamento",
+      "description": "Solicite um orçamento para desenvolvimento de sites ou vídeos com IA",
+      "url": "/#lead-form",
+      "icons": [{ "src": "/images/heroo.png", "sizes": "96x96" }]
+    }
+  ]
+}

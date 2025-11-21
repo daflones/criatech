@@ -6,9 +6,92 @@ import { Toaster } from 'react-hot-toast'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'CriaTech - Soluções Digitais de Alta Conversão',
-  description: 'Desenvolvimento de sistemas, softwares e vídeos com IA para maximizar suas conversões. Sites personalizados e estratégias digitais que transformam visitantes em clientes.',
-  keywords: 'desenvolvimento web, vídeos com IA, alta conversão, landing pages, sistemas personalizados',
+  title: 'CriaTech | Desenvolvimento de Sites e Vídeos com IA no Rio de Janeiro',
+  description: 'CriaTech: Especialistas em desenvolvimento de sites, sistemas e vídeos com inteligência artificial. Transformamos seu negócio com soluções digitais de alta conversão. Atendimento em todo Brasil.',
+  keywords: [
+    'CriaTech',
+    'cria tech',
+    'criatech',
+    'desenvolvimento de sites',
+    'desenvolvimento web',
+    'sites com IA',
+    'vídeos com inteligência artificial',
+    'landing pages',
+    'sistemas personalizados',
+    'softwares sob medida',
+    'desenvolvimento de software',
+    'Rio de Janeiro',
+    'Brasil',
+    'alta conversão',
+    'transformação digital',
+    'tecnologia e inovação',
+    'sites responsivos',
+    'e-commerce',
+    'plataformas web'
+  ],
+  authors: [{ name: 'CriaTech' }],
+  creator: 'CriaTech',
+  publisher: 'CriaTech',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://criatech.com.br'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'pt_BR',
+    url: 'https://criatech.com.br',
+    title: 'CriaTech | Desenvolvimento de Sites e Vídeos com IA',
+    description: 'Especialistas em desenvolvimento de sites, sistemas e vídeos com inteligência artificial. Transformamos seu negócio com soluções digitais de alta conversão.',
+    siteName: 'CriaTech',
+    images: [
+      {
+        url: '/images/heroo.png',
+        width: 1200,
+        height: 630,
+        alt: 'CriaTech - Desenvolvimento de Sites e Vídeos com IA',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'CriaTech | Desenvolvimento de Sites e Vídeos com IA',
+    description: 'Especialistas em desenvolvimento de sites, sistemas e vídeos com inteligência artificial. Transformamos seu negócio com soluções digitais.',
+    images: ['/images/heroo.png'],
+    creator: '@criatech',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'google-site-verification-code',
+  },
+  icons: {
+    icon: [
+      { url: '/images/heroo.png', sizes: 'any', type: 'image/png' },
+      { url: '/images/heroo.png', sizes: '32x32', type: 'image/png' },
+      { url: '/images/heroo.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/images/heroo.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      { rel: 'apple-touch-icon-precomposed', url: '/images/heroo.png' },
+    ],
+  },
+  manifest: '/site.webmanifest',
 }
 
 export default function RootLayout({
@@ -18,6 +101,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
+      <head>
+        <StructuredData />
+      </head>
       <body className={inter.className}>
         {children}
         <Toaster 
