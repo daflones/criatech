@@ -25,15 +25,19 @@ O arquivo `nixpacks.toml` já configura tudo automaticamente!
 
 ### 4. Variáveis de Ambiente (IMPORTANTE!)
 
-Adicione estas variáveis na seção "Environment Variables":
+Adicione **EXATAMENTE** estas variáveis na seção "Environment Variables":
 
 ```
 NEXT_PUBLIC_SUPABASE_URL=https://dqckxzliothvmxatqmty.supabase.co
-SUPABASE_SERVICE_ROLE_KEY=sua_service_role_key_aqui
+SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRxY2t4emxpb3Rodm14YXRxbXR5Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2MzczMjUzMywiZXhwIjoyMDc5MzA4NTMzfQ.sMjfGwHUkqk9VeEjhRI5C6uF93u7z3SxZ70c5pPK4LI
 NODE_ENV=production
 ```
 
-⚠️ **IMPORTANTE**: Substitua `sua_service_role_key_aqui` pela sua chave real do Supabase!
+⚠️ **CRÍTICO - NOMES EXATOS**: 
+- ✅ `NEXT_PUBLIC_SUPABASE_URL` (COM o prefixo NEXT_PUBLIC_)
+- ✅ `SUPABASE_SERVICE_ROLE_KEY` (SEM o prefixo NEXT_PUBLIC_)
+- ❌ NÃO use `SUPABASE_URL` (sem o NEXT_PUBLIC_)
+- ❌ NÃO use `NEXT_PUBLIC_SUPABASE_SERVICE_ROLE_KEY`
 
 ### 5. Porta
 - Porta padrão: **3000** (Next.js usa automaticamente)
